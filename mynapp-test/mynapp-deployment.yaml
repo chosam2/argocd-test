@@ -13,9 +13,9 @@ template:
   metadata:
     labels:
       app: mynapp-deploy
-    spec:
-      containers:
-      - image: c1t1d0s7/myweb:v1
-        name: mynapp
-        ports:
-        - containerPort: 8080
+  spec:
+    containers:
+    - image: c1t1d0s7/myweb:v1
+      name: mynapp
+      ports:
+      - containerPort: 8080
