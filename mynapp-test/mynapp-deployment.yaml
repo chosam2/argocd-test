@@ -9,10 +9,10 @@ spec:
   selector:
     matchLabels:
       app: mynapp-deploy
-  template:
-    metadata:
-      labels:
-        app: mynapp-deploy
+template:
+  metadata:
+    labels:
+      app: mynapp-deploy
     spec:
       containers:
       - image: c1t1d0s7/myweb:v1
