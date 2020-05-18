@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mynapp-deploy
+  name: mynapp-deploy  
   labels:
     app: mynapp-deploy
 spec:
@@ -9,13 +9,13 @@ spec:
   selector:
     matchLabels:
       app: mynapp-deploy
-template:
-  metadata:
-    labels:
-      app: mynapp-deploy
-  spec:
-    containers:
-    - image: c1t1d0s7/myweb:v1
-      name: mynapp
-      ports:
-      - containerPort: 8080
+  template:
+    metadata:
+      labels:
+        app: mynapp-deploy
+    spec:
+      containers:
+      - image: c1t1d0s7/myweb:v1
+        name: mynapp
+        ports:
+        - containerPort: 8080
